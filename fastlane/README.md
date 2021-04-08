@@ -26,9 +26,9 @@ Generate new localized screenshots
 fastlane ios tests
 ```
 
-### ios version
+### ios gitpush
 ```
-fastlane ios version
+fastlane ios gitpush
 ```
 
 
