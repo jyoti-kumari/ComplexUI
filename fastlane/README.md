@@ -31,6 +31,11 @@ fastlane ios tests
 fastlane ios gitpush
 ```
 
+### ios gitpull
+```
+fastlane ios gitpull
+```
+
 
 ----
 

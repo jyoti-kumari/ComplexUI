@@ -36,6 +36,9 @@ lane :gitpush do
         git_add
         git_commit(path: "*", message: "Version")
         push_to_git_remote
+end
+lane :gitpull do
+        git_pull
 
 
 end
