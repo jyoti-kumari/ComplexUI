@@ -23,7 +23,6 @@ class ComplexUIProject1Tests: FBSnapshotTestCase {
     func testExample() {
         let viewController: UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ViewController")
         FBSnapshotVerifyView(viewController.view, identifier: "simpleView", perPixelTolerance: 0.5, overallTolerance: 0.5)
-        snapshot("0Launch")
     }
 
     override func setUpWithError() throws {
