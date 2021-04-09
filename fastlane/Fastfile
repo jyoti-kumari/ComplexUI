@@ -31,4 +31,24 @@ lane :tests do
             devices: ["iPhone 8"],
             scheme: "ComplexUIProject1")
 end
+lane :gitpush do
+
+        git_add
+        git_commit(path: "*", message: "Version")
+        push_to_git_remote
+end
+lane :gitpull do
+        git_pull
+
+
+end
+lane :takeCheckout do | options |
+	if options[:branchName]
+		sh("git", "checkout", "-b", options[:branchName])
+	else
+		UI.user_error!("Send the branch name as: <fastlane takeCheckout branchName:NewBranchName>")
+	end
+end
+
+
 end
